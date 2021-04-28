@@ -1,0 +1,50 @@
+.App {
+	height: 100vh;
+}
+
+.CardContainer {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	margin: 50px 0 100px 0;
+}
+
+.Catalog {
+	width: 80%;
+	margin: auto;
+}
+
+.Text {
+	margin-top: 50px;
+}
+
+@media (max-width: 1650px) {
+	.CardContainer {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.Catalog {
+		width: 90%;
+	}
+}
+
+@media (max-width: 1100px) {
+	.CardContainer {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.Catalog {
+		width: 90%;
+	}
+}
+
+@media (max-width: 700px) {
+	.CardContainer {
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
+	}
+
+	.Catalog {
+		width: 90%;
+	}
+}
